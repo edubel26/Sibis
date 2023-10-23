@@ -8,3 +8,7 @@ EXEC [dbo].[SeedStates];
 
 EXEC [dbo].[SeedCities];
 
+EXEC [dbo].[SeedHotel];
+
+EXEC [dbo].[SeedHotelRoom];
+
