@@ -17,7 +17,7 @@ BEGIN
                     ('eps servicio occidental de salud s.a.'),
                     ('eps y medicina prepagada suramericana s.a'),
                     ('nueva eps s.a.'),
-                    ('salud total s.a.  e.p.s.'),
+                    ('salud total s.a. e.p.s.'),
                     ('saludvida s.a. e.p.s'),
                     ('savia salud eps'),
                     ('capital salud'),
@@ -35,8 +35,6 @@ BEGIN
                     ('asociación indígena del cesar y la guajira dusakawi'),
                     ('eps s.o.s. s.a.'),
                     ('fundación salud mia')
-
-                    
 
     END
 END

@@ -12,7 +12,7 @@ CREATE TABLE [dbo].[User]
   [UserBirthCityId]                     INT NOT NULL,
   [UserBirthDate]                       DATETIME NOT NULL,
 
-  [EpsId]                           INT NOT NULL,  
+  [EpsId]                               INT NOT NULL,  
 
   [UserDocumentType]                    INT NOT NULL,
   [UserDocumentNumber]                  VARCHAR(100) NOT NULL,
