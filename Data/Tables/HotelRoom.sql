@@ -10,3 +10,4 @@ CREATE TABLE [dbo].[HotelRoom]
   CONSTRAINT [FK_dbo_Hotel_HotelId__dbo_HotelRoom_HotelId] FOREIGN KEY ([HotelId]) REFERENCES [dbo].[Hotel] ([HotelId]) 
  
 )
+ 

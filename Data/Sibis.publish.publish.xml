@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <TargetDatabaseName>Sibis</TargetDatabaseName>
-    <TargetConnectionString>Data Source=localhost;Initial Catalog=master;User ID=sa;Password=******;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Authentication=SqlPassword;Application Name=vscode-mssql;Command Timeout=30</TargetConnectionString>
+    <TargetDatabaseName>Data</TargetDatabaseName>
+    <TargetConnectionString>Data Source=localhost;Initial Catalog=master;Integrated Security=True;Password=******;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Name=vscode-mssql;Command Timeout=30</TargetConnectionString>
     <AllowIncompatiblePlatform>True</AllowIncompatiblePlatform>
     <DropPermissionsNotInSource>True</DropPermissionsNotInSource>
     <DropObjectsNotInSource>True</DropObjectsNotInSource>
@@ -30,4 +30,9 @@
     <ExcludeServerTriggers>True</ExcludeServerTriggers>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="IsInDevelopmentMode">
+      <Value>1</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
 </Project>

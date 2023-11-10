@@ -9,10 +9,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Seeds" />
+    <Folder Include="StoredProcedures" />
     <Folder Include="Tables" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Sibis.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="IsInDevelopmentMode">
@@ -22,6 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Seeds\MainPostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sibis.publish.publish.xml" />
   </ItemGroup>
   <Target Name="BeforeBuild">
     <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
