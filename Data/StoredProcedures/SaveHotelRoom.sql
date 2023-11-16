@@ -7,7 +7,7 @@ AS
 BEGIN 
   MERGE [dbo].[HotelRoom] AS T
   USING(VALUES (@HotelRoomId, @HotelRoomCode, @HotelRoomCapacity, @HotelId)) AS S (HotelRoomId, HotelRoomCode, HotelRoomCapacity, HotelId)
-  ON S.HotelRoomId = S.HotelRoomId
+  ON S.HotelRoomId = T.HotelRoomId
 
   WHEN MATCHED THEN 
   UPDATE SET  T.HotelRoomCode = S.HotelRoomCode,

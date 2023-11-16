@@ -9,6 +9,7 @@ BEGIN
 
   WHEN MATCHED THEN 
   UPDATE SET T.ApplicationStatusName = S.ApplicationStatusName
+  
   WHEN NOT MATCHED BY TARGET THEN 
   INSERT (ApplicationStatusName) VALUES (@ApplicationStatusName);
 END
